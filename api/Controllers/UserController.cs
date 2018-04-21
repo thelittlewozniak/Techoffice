@@ -33,5 +33,33 @@ namespace api.Controllers
             }
             return new ObjectResult(users);
         }
+
+        //Put api/user/updateuser/5
+        [HttpPut("{id}")]
+        public IActionResult Update(string id, [FromBody] User user)
+        {
+            if (user == null || user.Id != id)
+            {
+                return BadRequest();
+            }
+
+            var tempUser = _context.Users.FirstOrDefault(t => t.Id == id);
+            if (tempUser == null)
+            {
+                return NotFound();
+            }
+
+            tempUser.Id = user.Id;
+            tempUser.Name = user.Name;
+            tempUser.Email = user.Email;
+            tempUser.LastPosition = user.LastPosition;
+            tempUser.LastPositionTime = user.LastPositionTime;
+            tempUser.Ghostmode = user.Ghostmode;
+            tempUser.AppToken = user.AppToken;
+
+            _context.Users.Update(tempUser);
+            _context.SaveChanges();
+            return new NoContentResult();
+        }
     }
 }
