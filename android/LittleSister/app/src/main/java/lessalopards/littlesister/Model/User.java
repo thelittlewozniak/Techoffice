@@ -6,14 +6,16 @@ public class User {
     private String email;
     private String name;
     private boolean ghostmode;
-    private int positionId;
+    private int lastPosition;
+    private int lastPositionTime;
 
-    public User(String id, String email, String name, boolean ghostmode, int positionId) {
+    public User(String id, String email, String name, boolean ghostmode, int lastPosition, int lastPositionTime) {
         this.id = id;
         this.email = email;
         this.name = name;
         this.ghostmode = ghostmode;
-        this.positionId = positionId;
+        this.lastPosition = lastPosition;
+        this.lastPositionTime = lastPositionTime;
     }
 
     public String getId() {
@@ -48,11 +50,19 @@ public class User {
         this.ghostmode = ghostmode;
     }
 
-    public int getPositionId() {
-        return positionId;
+    public int getLastPosition() {
+        return lastPosition;
     }
 
-    public void setPositionId(int positionId) {
-        this.positionId = positionId;
+    public void setLastPosition(int lastPosition) {
+        this.lastPosition = lastPosition;
+    }
+
+    public int getLastPositionTime() {
+        return lastPositionTime;
+    }
+
+    public void setLastPositionTime(int lastPositionTime) {
+        this.lastPositionTime = lastPositionTime;
     }
 }

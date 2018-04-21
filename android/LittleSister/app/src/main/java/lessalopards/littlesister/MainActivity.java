@@ -14,6 +14,8 @@ import com.google.firebase.iid.FirebaseInstanceId;
 import java.util.Arrays;
 import java.util.List;
 
+import lessalopards.littlesister.DAO.DAO;
+
 public class MainActivity extends AppCompatActivity {
 
     private static final int RC_SIGN_IN = 123;
@@ -31,6 +33,9 @@ public class MainActivity extends AppCompatActivity {
                                 new AuthUI.IdpConfig.EmailBuilder().build()))
                         .build(),
                 RC_SIGN_IN);
+        DAO dao = new DAO();
+        dao.getAllUsers();
+        //
     }
 
     @Override
