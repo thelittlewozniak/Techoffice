@@ -6,7 +6,6 @@ using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using Emgu.CV;
-
 namespace LittleSister
 {
     class Program
@@ -29,6 +28,8 @@ namespace LittleSister
             //capture.Grab();
             Mat image=new Mat();
             capture.Retrieve(image,0);
+            
+            
         }
     }
 }
