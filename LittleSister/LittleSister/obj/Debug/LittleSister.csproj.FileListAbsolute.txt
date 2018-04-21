@@ -42,3 +42,12 @@ C:\Users\natha\Source\Repos\Techoffice\LittleSister\LittleSister\bin\Debug\sv\Ze
 C:\Users\natha\Source\Repos\Techoffice\LittleSister\LittleSister\bin\Debug\tr\ZedGraph.resources.dll
 C:\Users\natha\Source\Repos\Techoffice\LittleSister\LittleSister\bin\Debug\zh-cn\ZedGraph.resources.dll
 C:\Users\natha\Source\Repos\Techoffice\LittleSister\LittleSister\bin\Debug\zh-tw\ZedGraph.resources.dll
+C:\Users\natha\source\repos\Techoffice\LittleSister\LittleSister\bin\Debug\OpenCvSharpExtern.dll
+C:\Users\natha\source\repos\Techoffice\LittleSister\LittleSister\bin\Debug\OpenCvSharp.Blob.dll
+C:\Users\natha\source\repos\Techoffice\LittleSister\LittleSister\bin\Debug\OpenCvSharp.CPlusPlus.dll
+C:\Users\natha\source\repos\Techoffice\LittleSister\LittleSister\bin\Debug\OpenCvSharp.DebuggerVisualizers.dll
+C:\Users\natha\source\repos\Techoffice\LittleSister\LittleSister\bin\Debug\OpenCvSharp.dll
+C:\Users\natha\source\repos\Techoffice\LittleSister\LittleSister\bin\Debug\OpenCvSharp.Extensions.dll
+C:\Users\natha\source\repos\Techoffice\LittleSister\LittleSister\bin\Debug\OpenCvSharp.Gpu.dll
+C:\Users\natha\source\repos\Techoffice\LittleSister\LittleSister\bin\Debug\OpenCvSharp.MachineLearning.dll
+C:\Users\natha\source\repos\Techoffice\LittleSister\LittleSister\bin\Debug\OpenCvSharp.UserInterface.dll
