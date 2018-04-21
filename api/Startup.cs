@@ -25,9 +25,10 @@ namespace api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            string connectionString = "Server=tcp:littleister.database.windows.net,1433;Initial Catalog=LittleSister;Persist Security Info=False;User ID=TestUser;Password=Azerty12;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+            //Server=tcp:littleister.database.windows.net,1433;Initial Catalog=LittleSister;Persist Security Info=False;User ID=TestUser;Password=Azerty12;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
+            //string connectionString = "";
             services.AddDbContext<Context>(options =>
-                options.UseSqlServer(connectionString));
+                options.UseSqlServer(Configuration.GetConnectionString("connectionString")));
             services.AddMvc();
         }
 
@@ -37,8 +38,11 @@ namespace api
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                app.UseDatabaseErrorPage();
             }
-
+            else if (env.IsProduction() || env.IsStaging()) {
+               //app.UseExceptionHandler("");
+            }
             app.UseMvc();
         }
     }
