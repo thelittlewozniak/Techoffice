@@ -30,6 +30,7 @@ public class InstanceIdService extends FirebaseInstanceIdService {
     private void sendToServer(String token) {
 
         try {
+            //todo connect to database instead of api
             URL url = new URL("https://www.whatsthatlambda.com/store");
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 

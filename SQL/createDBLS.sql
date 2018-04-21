@@ -12,7 +12,8 @@ CREATE TABLE [User]
     lastPosition INT,
     appToken VARCHAR(255) NOT NULL,
     lastPositionTime DATE,
-    private BIT DEFAULT 1 NOT NULL,
+    ghostmode BIT DEFAULT 1 NOT NULL,
+    name VARCHAR(100) NOT NULL,
     CONSTRAINT User_Position_id_fk FOREIGN KEY (lastPosition) REFERENCES Position (id)
 );
 CREATE UNIQUE INDEX User_id_uindex ON [User] (id);
