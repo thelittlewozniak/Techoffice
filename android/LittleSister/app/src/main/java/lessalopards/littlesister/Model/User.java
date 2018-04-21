@@ -8,14 +8,16 @@ public class User {
     private boolean ghostmode;
     private int lastPosition;
     private int lastPositionTime;
+    private String appToken;
 
-    public User(String id, String email, String name, boolean ghostmode, int lastPosition, int lastPositionTime) {
+    public User(String id, String email, String name, boolean ghostmode, int lastPosition, int lastPositionTime, String appToken) {
         this.id = id;
         this.email = email;
         this.name = name;
         this.ghostmode = ghostmode;
         this.lastPosition = lastPosition;
         this.lastPositionTime = lastPositionTime;
+        this.appToken = appToken;
     }
 
     public String getId() {
@@ -64,5 +66,13 @@ public class User {
 
     public void setLastPositionTime(int lastPositionTime) {
         this.lastPositionTime = lastPositionTime;
+    }
+
+    public String getAppToken() {
+        return appToken;
+    }
+
+    public void setAppToken(String appToken) {
+        this.appToken = appToken;
     }
 }

@@ -28,6 +28,7 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     api 'com.firebaseui:firebase-ui-auth:3.2.2'
     api 'com.google.firebase:firebase-messaging:15.0.0'
+    api 'com.google.code.gson:gson:2.8.2'
 }
 
 
