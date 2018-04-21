@@ -51,3 +51,6 @@ C:\Users\natha\source\repos\Techoffice\LittleSister\LittleSister\bin\Debug\OpenC
 C:\Users\natha\source\repos\Techoffice\LittleSister\LittleSister\bin\Debug\OpenCvSharp.Gpu.dll
 C:\Users\natha\source\repos\Techoffice\LittleSister\LittleSister\bin\Debug\OpenCvSharp.MachineLearning.dll
 C:\Users\natha\source\repos\Techoffice\LittleSister\LittleSister\bin\Debug\OpenCvSharp.UserInterface.dll
+C:\Users\natha\source\repos\Techoffice\LittleSister\LittleSister\bin\Debug\Newtonsoft.Json.dll
+C:\Users\natha\source\repos\Techoffice\LittleSister\LittleSister\bin\Debug\System.Web.Helpers.dll
+C:\Users\natha\source\repos\Techoffice\LittleSister\LittleSister\bin\Debug\Newtonsoft.Json.xml

@@ -12533,28 +12533,34 @@
     ]
   },
   "packageFolders": {
-    "/Users/xvercruysse/.nuget/packages/": {},
-    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\natha\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/xvercruysse/Documents/GitRepos/Techoffice/api/api.csproj",
+      "projectUniqueName": "C:\\Users\\natha\\source\\repos\\Techoffice\\api\\api.csproj",
       "projectName": "api",
-      "projectPath": "/Users/xvercruysse/Documents/GitRepos/Techoffice/api/api.csproj",
-      "packagesPath": "/Users/xvercruysse/.nuget/packages/",
-      "outputPath": "/Users/xvercruysse/Documents/GitRepos/Techoffice/api/obj/",
+      "projectPath": "C:\\Users\\natha\\source\\repos\\Techoffice\\api\\api.csproj",
+      "packagesPath": "C:\\Users\\natha\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\natha\\source\\repos\\Techoffice\\api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/xvercruysse/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\natha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Users\\natha\\Downloads\\AForgeFFmpeg": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -12571,14 +12577,14 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
-          "Microsoft.NETCore.App": {
-            "target": "Package",
-            "version": "2.0.0",
-            "autoReferenced": true
-          },
           "Microsoft.AspNetCore.All": {
             "target": "Package",
-            "version": "2.0.0"
+            "version": "[2.0.0, )"
+          },
+          "Microsoft.NETCore.App": {
+            "target": "Package",
+            "version": "[2.0.0, )",
+            "autoReferenced": true
           }
         },
         "imports": [

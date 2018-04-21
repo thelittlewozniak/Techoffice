@@ -1,5 +1,6 @@
 ﻿using Emgu.CV;
 using Emgu.CV.Structure;
+using Newtonsoft.Json;
 using OpenCvSharp;
 using System;
 using System.Collections.Generic;
@@ -11,6 +12,7 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Helpers;
 
 namespace LittleSister
 {
@@ -31,6 +33,7 @@ namespace LittleSister
                 string contentString = await response.Content.ReadAsStringAsync();
                 Console.WriteLine("\nResponse:\n");
                 Console.WriteLine(JsonPrettyPrint(contentString));
+                Console.WriteLine(IsTherePeople(contentString));
             }
         }
         public static byte[] ImageToByteArray(this System.Drawing.Image image)
@@ -41,6 +44,20 @@ namespace LittleSister
                 return ms.ToArray();
             }
         }
+        public static Boolean IsTherePeople(string json)
+        {
+            Boolean result=false;
+            Vision dynamicObject = JsonConvert.DeserializeObject<Vision>(json);
+            foreach (VisionCategorie cat in dynamicObject.Categories)
+            {
+                if (cat.name == "_people" || cat.name == "people_portrait")
+                {
+                    result = true;
+                }
+            }
+            return result;
+        }
+
         public static string JsonPrettyPrint(string json)
         {
             if (string.IsNullOrEmpty(json))
