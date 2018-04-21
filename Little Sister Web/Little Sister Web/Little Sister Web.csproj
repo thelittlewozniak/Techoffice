@@ -169,6 +169,8 @@
     <Content Include="Views\Shared\_LayoutConnected.cshtml" />
     <Content Include="Views\Home\Accueil.cshtml" />
     <Content Include="Views\Main\Index.cshtml" />
+    <Content Include="Views\Main\Rechercher.cshtml" />
+    <Content Include="Views\Main\Verrouiller.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

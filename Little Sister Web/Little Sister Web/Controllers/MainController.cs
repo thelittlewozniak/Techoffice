@@ -13,5 +13,13 @@ namespace Little_Sister_Web.Controllers
         {
             return View();
         }
+        public ActionResult Rechercher()
+        {
+            return View();
+        }
+        public ActionResult Verrouiller()
+        {
+            return View();
+        }
     }
 }
